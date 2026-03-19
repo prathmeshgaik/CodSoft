@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CalcPro — Calculator</title>
+  <link rel="stylesheet" href="pro3.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Ambient background orbs -->
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
+
+  <div class="wrapper">
+
+    <!-- ═══════════ CALCULATOR ═══════════ -->
+    <div class="calculator" id="calculator">
+
+      <!-- Header bar -->
+      <div class="calc-header">
+        <span class="calc-header__brand">CALC<span>PRO</span></span>
+        <div class="calc-header__dots">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+        </div>
+      </div>
+
+      <!-- Display -->
+      <div class="display" id="display">
+        <div class="display__expression" id="expression">&nbsp;</div>
+        <div class="display__main">
+          <div class="display__result" id="result">0</div>
+          <span class="display__cursor" id="cursor"></span>
+        </div>
+        <div class="display__meta">
+          <span class="display__mode">RAD/DEG</span>
+          <span class="display__memory" id="memIndicator"></span>
+        </div>
+      </div>
+
+      <!-- Main Button Grid -->
+      <div class="btn-grid">
+
+        <!-- Row 1 -->
+        <button class="btn btn--util btn--span2" data-action="clear" id="clearBtn">AC</button>
+        <button class="btn btn--util" data-action="sign">+/−</button>
+        <button class="btn btn--util" data-action="percent">%</button>
+        <button class="btn btn--op"   data-action="operator" data-value="÷">÷</button>
+
+        <!-- Row 2 -->
+        <button class="btn btn--num" data-action="number" data-value="7">7</button>
+        <button class="btn btn--num" data-action="number" data-value="8">8</button>
+        <button class="btn btn--num" data-action="number" data-value="9">9</button>
+        <button class="btn btn--op"  data-action="operator" data-value="×">×</button>
+
+        <!-- Row 3 -->
+        <button class="btn btn--num" data-action="number" data-value="4">4</button>
+        <button class="btn btn--num" data-action="number" data-value="5">5</button>
+        <button class="btn btn--num" data-action="number" data-value="6">6</button>
+        <button class="btn btn--op"  data-action="operator" data-value="−">−</button>
+
+        <!-- Row 4 -->
+        <button class="btn btn--num" data-action="number" data-value="1">1</button>
+        <button class="btn btn--num" data-action="number" data-value="2">2</button>
+        <button class="btn btn--num" data-action="number" data-value="3">3</button>
+        <button class="btn btn--op"  data-action="operator" data-value="+">+</button>
+
+        <!-- Row 5 -->
+        <button class="btn btn--num btn--span2" data-action="number" data-value="0">0</button>
+        <button class="btn btn--num" data-action="decimal">.</button>
+        <button class="btn btn--equal" data-action="equals">=</button>
+
+      </div>
+
+      <!-- Advanced Row -->
+      <div class="btn-grid-adv">
+        <button class="btn btn--adv" data-action="backspace" title="Backspace">⌫</button>
+        <button class="btn btn--adv" data-action="sqrt"      title="Square Root">√x</button>
+        <button class="btn btn--adv" data-action="square"    title="x Squared">x²</button>
+        <button class="btn btn--adv" data-action="inverse"   title="1 over x">1/x</button>
+      </div>
+
+    </div>
+
+    <!-- History Panel -->
+    <div class="history-panel" id="historyPanel">
+      <div class="history-panel__hd">
+        <span>History</span>
+        <button id="clearHistory" class="history-clear">✕ Clear</button>
+      </div>
+      <ul class="history-list" id="historyList">
+        <li class="history-empty">No calculations yet…</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- History toggle -->
+  <button class="history-toggle" id="historyToggle" title="History">
+    ☰
+  </button>
+
+  <script src="pro3.js"></script>
+</body>
+</html>
