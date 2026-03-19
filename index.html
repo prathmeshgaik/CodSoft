@@ -1,473 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NexaFlow — Build Faster. Ship Smarter.</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prathmesh Gaikwad · dev portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
 
-  <header class="header">
-    <nav class="nav container">
-      <div class="nav__logo">
-        <span class="logo-mark">N</span>
-        <span class="logo-text">NexaFlow</span>
-      </div>
-      <ul class="nav__links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-      </ul>
-      <div class="nav__actions">
-        <a href="#" class="btn btn--ghost">Log In</a>
-        <a href="#" class="btn btn--primary">Get Started Free</a>
-      </div>
-      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
+    <header class="navbar">
+      <div class="logo">Prathmesh Gaikwad ✦</div>
+      <div class="tagline">Full Stack Developer • Java & Spring Boot</div>
+    </header>
 
-  <main>
-
-    <section class="hero" id="home">
-      <div class="hero__bg-grid"></div>
-      <div class="hero__glow hero__glow--1"></div>
-      <div class="hero__glow hero__glow--2"></div>
-
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <div class="hero__badge">
-            <span class="badge-dot"></span>
-            Trusted by 50,000+ developers worldwide
-          </div>
-          <h1 class="hero__title">
-            Build Faster.<br/>
-            <span class="gradient-text">Ship Smarter.</span>
-          </h1>
-          <p class="hero__subtitle">
-            NexaFlow is the all-in-one developer platform that streamlines your workflow,
-            automates deployments, and helps your team collaborate in real time — from idea to production.
-          </p>
-          <div class="hero__cta">
-            <a href="#" class="btn btn--primary btn--lg">
-              Start for Free
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#how" class="btn btn--outline btn--lg">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A1 1 0 0 0 8 6.82z"/></svg>
-              Watch Demo
-            </a>
-          </div>
-          <div class="hero__social-proof">
-            <div class="avatars">
-              <div class="avatar" style="background:#6366f1">A</div>
-              <div class="avatar" style="background:#0ea5e9">B</div>
-              <div class="avatar" style="background:#10b981">C</div>
-              <div class="avatar" style="background:#f59e0b">D</div>
-              <div class="avatar" style="background:#ef4444">+</div>
-            </div>
-            <p><strong>50k+</strong> teams already building with NexaFlow</p>
-          </div>
+    <section class="about-section">
+      <h2 class="section-title">about me</h2>
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="img/Prathmesh Gaikwad.JPG" alt="Prathmesh Gaikwad">
         </div>
-
-        <div class="hero__visual">
-          <div class="dashboard-card">
-            <div class="dashboard-card__header">
-              <div class="traffic-lights">
-                <span class="tl tl--red"></span>
-                <span class="tl tl--yellow"></span>
-                <span class="tl tl--green"></span>
-              </div>
-              <span class="dashboard-card__title">Live Dashboard</span>
-            </div>
-            <div class="dashboard-card__body">
-              <div class="metric-row">
-                <div class="metric">
-                  <div class="metric__val">99.9%</div>
-                  <div class="metric__label">Uptime</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__val">1.2ms</div>
-                  <div class="metric__label">Latency</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__val">4.8k</div>
-                  <div class="metric__label">Deploys</div>
-                </div>
-              </div>
-              <div class="chart-area">
-                <div class="chart-bar" style="--h:60%"></div>
-                <div class="chart-bar" style="--h:80%"></div>
-                <div class="chart-bar" style="--h:50%"></div>
-                <div class="chart-bar" style="--h:95%"></div>
-                <div class="chart-bar chart-bar--active" style="--h:75%"></div>
-                <div class="chart-bar" style="--h:88%"></div>
-                <div class="chart-bar" style="--h:65%"></div>
-                <div class="chart-bar" style="--h:72%"></div>
-              </div>
-              <div class="deploy-list">
-                <div class="deploy-item deploy-item--success">
-                  <span class="deploy-dot"></span>
-                  <span>main → production</span>
-                  <span class="deploy-time">2s ago</span>
-                </div>
-                <div class="deploy-item deploy-item--pending">
-                  <span class="deploy-dot"></span>
-                  <span>feat/auth → staging</span>
-                  <span class="deploy-time">Building…</span>
-                </div>
-                <div class="deploy-item deploy-item--success">
-                  <span class="deploy-dot"></span>
-                  <span>fix/ui → preview</span>
-                  <span class="deploy-time">5m ago</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- floating badges -->
-          <div class="float-badge float-badge--1">
-            <span>⚡</span> Deploy in 3s
-          </div>
-          <div class="float-badge float-badge--2">
-            <span>🔒</span> SSL Secured
-          </div>
-        </div>
-      </div>
-
-      <!-- stats bar -->
-      <div class="stats-bar container">
-        <div class="stat-item">
-          <strong>500M+</strong>
-          <span>Requests served daily</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <strong>99.99%</strong>
-          <span>SLA Uptime guarantee</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <strong>180+</strong>
-          <span>Countries supported</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <strong>24/7</strong>
-          <span>Expert support team</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="features section" id="features">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Features</div>
-          <h2 class="section-title">Everything you need to <span class="gradient-text">move fast</span></h2>
-          <p class="section-sub">From one-click deployments to real-time collaboration, NexaFlow gives your team superpowers.</p>
-        </div>
-
-        <div class="features-grid">
-          <div class="feature-card feature-card--large">
-            <div class="feature-card__icon">🚀</div>
-            <h3>Instant Deployments</h3>
-            <p>Push to git and go live in seconds. Automatic rollbacks, zero-downtime deployments, and branch previews built in.</p>
-            <div class="feature-card__glow"></div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__icon">🔗</div>
-            <h3>CI/CD Pipelines</h3>
-            <p>Visual pipeline builder with 200+ integrations. Build, test, and deploy automatically.</p>
-            <div class="feature-card__glow"></div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__icon">📊</div>
-            <h3>Real-time Analytics</h3>
-            <p>Monitor performance, errors, and user metrics in a beautiful live dashboard.</p>
-            <div class="feature-card__glow"></div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__icon">👥</div>
-            <h3>Team Collaboration</h3>
-            <p>Live cursors, shared workspaces, and role-based access for your entire team.</p>
-            <div class="feature-card__glow"></div>
-          </div>
-          <div class="feature-card feature-card--large">
-            <div class="feature-card__icon">🛡️</div>
-            <h3>Enterprise Security</h3>
-            <p>SOC2 Type II certified. End-to-end encryption, SSO, audit logs, and advanced threat protection on every plan.</p>
-            <div class="feature-card__glow"></div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__icon">⚙️</div>
-            <h3>Custom Workflows</h3>
-            <p>Build any automation you need with our no-code workflow builder and API.</p>
-            <div class="feature-card__glow"></div>
+        <div class="about-text">
+          <h3>hi, i'm Prathmesh 👋</h3>
+          <p>Computer Science Engineering student · Kolhapur, India</p>
+          <div class="bio-highlight">
+            ⚡ I build scalable web applications using Java, Spring Boot, and modern web technologies.
+            I focus on creating efficient backend systems and seamless frontend experiences.
+            Passionate about solving real-world problems and developing full-stack applications.
           </div>
         </div>
       </div>
     </section>
 
-    <section class="how section" id="how">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">How It Works</div>
-          <h2 class="section-title">Up and running in <span class="gradient-text">3 simple steps</span></h2>
-        </div>
+    <!-- Skills -->
+    <section class="skills-section">
+      <h2 class="section-title">core skills</h2>
+      <div class="skills-pills">
+        <span class="skill-item">Java</span>
+        <span class="skill-item">Spring Boot</span>
+        <span class="skill-item">HTML, CSS, JavaScript</span>
+        <span class="skill-item">React</span>
+        <span class="skill-item">Node.js & Express</span>
+        <span class="skill-item">MySQL</span>
+        <span class="skill-item">Firebase</span>
+        <span class="skill-item">Git & GitHub</span>
+      </div>
+    </section>
 
-        <div class="steps">
-          <div class="step">
-            <div class="step__number">01</div>
-            <div class="step__content">
-              <h3>Connect Your Repo</h3>
-              <p>Link your GitHub, GitLab, or Bitbucket repository in one click. NexaFlow detects your stack automatically.</p>
-            </div>
-            <div class="step__connector"></div>
+    <!-- Projects -->
+    <section class="projects-section">
+      <h2 class="section-title">featured projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-img">🎬</div>
+          <div class="project-info">
+            <h4>Movie Reservation System</h4>
+            <p>Backend system with authentication, movie management, seat booking, and reporting features.</p>
           </div>
-          <div class="step">
-            <div class="step__number">02</div>
-            <div class="step__content">
-              <h3>Configure & Build</h3>
-              <p>Set your environment variables, build commands, and scaling rules with our intuitive setup wizard.</p>
-            </div>
-            <div class="step__connector"></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">🛒</div>
+          <div class="project-info">
+            <h4>E-Commerce Web App</h4>
+            <p>Full-stack application using React, Node.js, Express, and modern UI design.</p>
           </div>
-          <div class="step">
-            <div class="step__number">03</div>
-            <div class="step__content">
-              <h3>Deploy & Scale</h3>
-              <p>Hit deploy. Your app goes live globally in seconds. Auto-scales to handle any traffic spike.</p>
-            </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">🎮</div>
+          <div class="project-info">
+            <h4>Anti-Doping Gamification Platform</h4>
+            <p>Interactive platform with badges, leaderboards, and educational modules for athletes.</p>
           </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">📊</div>
+          <div class="project-info">
+            <h4>Real-Time Teacher Forum</h4>
+            <p>MERN stack based discussion platform for teachers with real-time communication.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="resume-section">
+      <h2 class="section-title">resume</h2>
+      <div class="resume-box">
+        <a href="doc/PGresume.pdf" class="btn-resume" download="Prathmesh_Gaikwad_Resume.pdf">
+          ⬇️ download my resume (PDF)
+          <small>updated 2026</small>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section">
+      <h2 class="section-title">contact</h2>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span>📧</span> prathmeshgaikwad@gmail.com
+        </div>
+        <div class="contact-item">
+          <span>📱</span> +91 963715XXXX
         </div>
       </div>
     </section>
 
-    <section class="pricing section" id="pricing">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Pricing</div>
-          <h2 class="section-title">Simple, <span class="gradient-text">transparent pricing</span></h2>
-          <p class="section-sub">No hidden fees. No surprises. Cancel anytime.</p>
-        </div>
-
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div class="pricing-card__plan">Starter</div>
-            <div class="pricing-card__price">
-              <span class="price-dollar">$</span>0
-              <span class="price-period">/month</span>
-            </div>
-            <p class="pricing-card__desc">Perfect for side projects and learning.</p>
-            <ul class="pricing-card__features">
-              <li><span class="check">✓</span> 3 Projects</li>
-              <li><span class="check">✓</span> 100GB Bandwidth</li>
-              <li><span class="check">✓</span> Community Support</li>
-              <li><span class="check">✓</span> SSL Certificates</li>
-              <li class="disabled"><span>✗</span> Custom Domains</li>
-              <li class="disabled"><span>✗</span> Team Access</li>
-            </ul>
-            <a href="#" class="btn btn--outline btn--full">Get Started Free</a>
-          </div>
-
-          <div class="pricing-card pricing-card--featured">
-            <div class="pricing-card__badge">Most Popular</div>
-            <div class="pricing-card__plan">Pro</div>
-            <div class="pricing-card__price">
-              <span class="price-dollar">$</span>29
-              <span class="price-period">/month</span>
-            </div>
-            <p class="pricing-card__desc">For growing teams shipping real products.</p>
-            <ul class="pricing-card__features">
-              <li><span class="check">✓</span> Unlimited Projects</li>
-              <li><span class="check">✓</span> 1TB Bandwidth</li>
-              <li><span class="check">✓</span> Priority Support</li>
-              <li><span class="check">✓</span> Custom Domains</li>
-              <li><span class="check">✓</span> Team Access (5 seats)</li>
-              <li><span class="check">✓</span> Advanced Analytics</li>
-            </ul>
-            <a href="#" class="btn btn--primary btn--full">Start Pro Trial</a>
-          </div>
-
-          <div class="pricing-card">
-            <div class="pricing-card__plan">Enterprise</div>
-            <div class="pricing-card__price">
-              <span class="price-dollar"></span>Custom
-              <span class="price-period"></span>
-            </div>
-            <p class="pricing-card__desc">For large teams with advanced needs.</p>
-            <ul class="pricing-card__features">
-              <li><span class="check">✓</span> Everything in Pro</li>
-              <li><span class="check">✓</span> Unlimited Seats</li>
-              <li><span class="check">✓</span> Dedicated Support</li>
-              <li><span class="check">✓</span> SLA Guarantee</li>
-              <li><span class="check">✓</span> SSO / SAML</li>
-              <li><span class="check">✓</span> Custom Contracts</li>
-            </ul>
-            <a href="#" class="btn btn--outline btn--full">Contact Sales</a>
-          </div>
-        </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="copyright">
+        © 2026 Prathmesh Gaikwad – built with html/css
       </div>
-    </section>
-
-    <section class="testimonials section" id="testimonials">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Reviews</div>
-          <h2 class="section-title">Loved by <span class="gradient-text">developers</span> everywhere</h2>
-        </div>
-
-        <div class="testimonials-grid">
-          <div class="testi-card">
-            <div class="testi-card__stars">★★★★★</div>
-            <p>"NexaFlow cut our deployment time from 20 minutes to under 30 seconds. It's the tool we didn't know we needed until we tried it."</p>
-            <div class="testi-card__author">
-              <div class="testi-avatar" style="background:#6366f1">SK</div>
-              <div>
-                <strong>Siddharth K.</strong>
-                <span>Lead Engineer @ Stripe</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card testi-card--highlight">
-            <div class="testi-card__stars">★★★★★</div>
-            <p>"The best developer experience I've ever had. The dashboard is beautiful, the docs are perfect, and support actually replies fast."</p>
-            <div class="testi-card__author">
-              <div class="testi-avatar" style="background:#10b981">AM</div>
-              <div>
-                <strong>Ananya M.</strong>
-                <span>CTO @ TechBridge</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card">
-            <div class="testi-card__stars">★★★★★</div>
-            <p>"We migrated 40 microservices in one weekend. The team collaboration features alone justify the entire cost."</p>
-            <div class="testi-card__author">
-              <div class="testi-avatar" style="background:#f59e0b">RJ</div>
-              <div>
-                <strong>Rahul J.</strong>
-                <span>DevOps Architect @ Flipkart</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Email</a>
       </div>
-    </section>
+    </footer>
 
-    <section class="cta-section section">
-      <div class="container">
-        <div class="cta-box">
-          <div class="cta-box__glow"></div>
-          <div class="section-tag">Get Started Today</div>
-          <h2>Ready to build something <span class="gradient-text">incredible?</span></h2>
-          <p>Join 50,000+ developers and teams using NexaFlow to ship faster. Free plan available. No credit card required.</p>
-          <div class="cta-box__actions">
-            <a href="#" class="btn btn--primary btn--lg">Start for Free →</a>
-            <a href="#" class="btn btn--ghost btn--lg">Talk to Sales</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
- 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <div class="nav__logo">
-            <span class="logo-mark">N</span>
-            <span class="logo-text">NexaFlow</span>
-          </div>
-          <p>The developer platform built for speed, reliability, and great teams.</p>
-          <div class="footer__socials">
-            <a href="#" class="social-btn">𝕏</a>
-            <a href="#" class="social-btn">in</a>
-            <a href="#" class="social-btn">gh</a>
-            <a href="#" class="social-btn">yt</a>
-          </div>
-        </div>
-
-        <div class="footer__links-group">
-          <h4>Product</h4>
-          <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Changelog</a></li>
-            <li><a href="#">Roadmap</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__links-group">
-          <h4>Developers</h4>
-          <ul>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">API Reference</a></li>
-            <li><a href="#">SDKs</a></li>
-            <li><a href="#">Open Source</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__links-group">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__links-group">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">Security</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer__bottom">
-        <p>© 2026 Prathmesh Gaikwad. All rights reserved.</p>
-        <p>Made with ❤️ for developers everywhere</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JS for mobile nav toggle -->
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks  = document.querySelector('.nav__links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('nav__links--open');
-      hamburger.classList.toggle('active');
-    });
-
-    // Scroll reveal
-    const revealEls = document.querySelectorAll(
-      '.feature-card, .step, .pricing-card, .testi-card, .stat-item'
-    );
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('revealed'), i * 80);
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    revealEls.forEach(el => {
-      el.classList.add('hidden-initially');
-      observer.observe(el);
-    });
-  </script>
+  </div>
 </body>
 </html>
