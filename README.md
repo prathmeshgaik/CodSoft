@@ -9,9 +9,9 @@
 
 | # | Project | Tech Stack | File(s) |
 |---|---------|------------|---------|
-| 1 | [Personal Portfolio](#1-personal-portfolio) | HTML, CSS | `portfolio.html` |
-| 2 | [Landing Page](#2-landing-page) | HTML, CSS | `index.html`, `style.css` |
-| 3 | [Calculator App](#3-calculator-app) | HTML, CSS, JS | `index.html`, `style.css`, `script.js` |
+| 1 | [Personal Portfolio](#1-personal-portfolio) | HTML, CSS | `index.html`,`style.css` |
+| 2 | [Landing Page](#2-landing-page) | HTML, CSS | `pro2.html`, `pro2style.css` |
+| 3 | [Calculator App](#3-calculator-app) | HTML, CSS, JS | `pro3.html`, `pro3.css`, `pro3.js` |
 
 ---
 
